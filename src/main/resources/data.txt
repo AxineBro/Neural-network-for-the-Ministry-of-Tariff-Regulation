@@ -1,0 +1,292 @@
+{
+  "31088810": {
+    "id": "31088810",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d31088810\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "3 кв. 2020 года",
+    "publicationDate": "13.10.2020",
+    "field": "Холодное водоснабжение",
+    "name": "СОПК \"Белогорьевского сельского поселения\"",
+    "inn": "3624005453",
+    "kpp": "362401001"
+  },
+  "28009595": {
+    "id": "28009595",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d28009595\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "1 кв. 2025 года",
+    "publicationDate": "18.04.2025",
+    "field": "Водоотведение",
+    "name": "МКП \"Перелешинский коммунальщик\"",
+    "inn": "3621005335",
+    "kpp": "362101001"
+  },
+  "28442767": {
+    "id": "28442767",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d28442767\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "01.07.2025",
+    "field": "Водоотведение",
+    "name": "АО \"Павловск Неруд\"",
+    "inn": "3620013598",
+    "kpp": "362001001"
+  },
+  "31507569": {
+    "id": "31507569",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d31507569\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "1 кв. 2022 года",
+    "publicationDate": "29.04.2022",
+    "field": "Водоотведение",
+    "name": "ИП Виноградова Е.А.",
+    "inn": "360903388670",
+    "kpp": "отсутствует"
+  },
+  "28148564": {
+    "id": "28148564",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d28148564\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "08.07.2025",
+    "field": "Теплоснабжение",
+    "name": "ГБПОУ ВО \"Калачеевский аграрный техникум\"",
+    "inn": "3610002318",
+    "kpp": "361001001"
+  },
+  "28445593": {
+    "id": "28445593",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d28445593\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "31.07.2025",
+    "field": "Водоотведение",
+    "name": "МКП УСП \"УГЛЯНЕЦТЕПЛОСБЫТ\"",
+    "inn": "3607006873",
+    "kpp": "360701001"
+  },
+  "31675540": {
+    "id": "31675540",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d31675540\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "21.07.2025",
+    "field": "Водоотведение",
+    "name": "МУП \"Теплоснабжение г.Поворино\"",
+    "inn": "3623007592",
+    "kpp": "362301001"
+  },
+  "30854084": {
+    "id": "30854084",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d30854084\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "27.07.2025",
+    "field": "Холодное водоснабжение",
+    "name": "СПОК \"Коршевское\"",
+    "inn": "3602010731",
+    "kpp": "360201001"
+  },
+  "31206294": {
+    "id": "31206294",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d31206294\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "4 кв. 2023 года",
+    "publicationDate": "19.01.2024",
+    "field": "Горячее водоснабжение",
+    "name": "ООО \"Агропроект\"",
+    "inn": "3666120176",
+    "kpp": "366601001"
+  },
+  "28891724": {
+    "id": "28891724",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d28891724\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "3 кв. 2023 года",
+    "publicationDate": "24.10.2023",
+    "field": "Холодное водоснабжение",
+    "name": "ООО \"Степнянское коммунальное хозяйство\"",
+    "inn": "3614007275",
+    "kpp": "361401001"
+  },
+  "30383329": {
+    "id": "30383329",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d30383329\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "15.07.2025",
+    "field": "Холодное водоснабжение",
+    "name": "ООО \"Водоканал\"",
+    "inn": "3625013626",
+    "kpp": "362501001"
+  },
+  "26372261": {
+    "id": "26372261",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d26372261\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "4 кв. 2020 года",
+    "publicationDate": "08.01.2021",
+    "field": "Холодное водоснабжение",
+    "name": "АО \"Луч\"",
+    "inn": "3627020918",
+    "kpp": "362701001"
+  },
+  "26487246": {
+    "id": "26487246",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d26487246\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2023 года",
+    "publicationDate": "04.07.2023",
+    "field": "Теплоснабжение",
+    "name": "ВТРЗ - филиал АО \"Желдорреммаш\"",
+    "inn": "7715729877",
+    "kpp": "366243001"
+  },
+  "31625725": {
+    "id": "31625725",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d31625725\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "4 кв. 2022 года",
+    "publicationDate": "24.01.2023",
+    "field": "Водоотведение",
+    "name": "ООО \"Экоресурс\"",
+    "inn": "3616025390",
+    "kpp": "361601001"
+  },
+  "30838270": {
+    "id": "30838270",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d30838270\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "22.07.2025",
+    "field": "Теплоснабжение",
+    "name": "ООО \"Выбор-Инжиниринг\"",
+    "inn": "3662197259",
+    "kpp": "366201001"
+  },
+  "31455121": {
+    "id": "31455121",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d31455121\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "09.07.2025",
+    "field": "Горячее водоснабжение",
+    "name": "МУП \"Кантемировское ПАП\"",
+    "inn": "3612007110",
+    "kpp": "361201001"
+  },
+  "26997251": {
+    "id": "26997251",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d26997251\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "1 кв. 2025 года",
+    "publicationDate": "30.04.2025",
+    "field": "Холодное водоснабжение",
+    "name": "ООО \"Этанол Спирт\"",
+    "inn": "3665049121",
+    "kpp": "361701001"
+  },
+  "31288151": {
+    "id": "31288151",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d31288151\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2023 года",
+    "publicationDate": "19.07.2023",
+    "field": "Холодное водоснабжение",
+    "name": "СОПК \"Водолей\"",
+    "inn": "3624005485",
+    "kpp": "362401001"
+  },
+  "31826381": {
+    "id": "31826381",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d31826381\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "23.07.2025",
+    "field": "Водоотведение",
+    "name": "МКП \"Рамонский водоканал\"",
+    "inn": "3666272637",
+    "kpp": "366601001"
+  },
+  "30855500": {
+    "id": "30855500",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d30855500\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "04.08.2025",
+    "field": "Холодное водоснабжение",
+    "name": "СОПК \"Чесменского сельского поселения\"",
+    "inn": "3602010812",
+    "kpp": "360201001"
+  },
+  "31088820": {
+    "id": "31088820",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d31088820\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "3 кв. 2023 года",
+    "publicationDate": "30.10.2023",
+    "field": "Водоотведение",
+    "name": "СПОК \"Журавского сельского поселения\"",
+    "inn": "3612008636",
+    "kpp": "361201001"
+  },
+  "28822252": {
+    "id": "28822252",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d28822252\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "4 кв. 2021 года",
+    "publicationDate": "27.01.2022",
+    "field": "Водоотведение",
+    "name": "ООО \"ЛОС\"",
+    "inn": "3663103750",
+    "kpp": "366301001"
+  },
+  "30896290": {
+    "id": "30896290",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d30896290\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "11.07.2025",
+    "field": "Горячее водоснабжение",
+    "name": "ООО \"ТЕПЛОСНАБ\"",
+    "inn": "3662237712",
+    "kpp": "366201001"
+  },
+  "27502274": {
+    "id": "27502274",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d27502274\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "08.07.2025",
+    "field": "Теплоснабжение",
+    "name": "Филиал АО \"Концерн Росэнергоатом\" \"Нововоронежская атомная станция\"",
+    "inn": "7721632827",
+    "kpp": "365143001"
+  },
+  "27644633": {
+    "id": "27644633",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d27644633\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "3 кв. 2020 года",
+    "publicationDate": "13.12.2020",
+    "field": "Горячее водоснабжение",
+    "name": "ООО \"ГАЗСЕРВИС\"",
+    "inn": "3662158450",
+    "kpp": "366201001"
+  },
+  "26842017": {
+    "id": "26842017",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d26842017\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "08.07.2025",
+    "field": "Холодное водоснабжение",
+    "name": "МКП КСП \"Красное\"",
+    "inn": "3617007700",
+    "kpp": "361701001"
+  },
+  "26755820": {
+    "id": "26755820",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d26755820\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2025 год",
+    "publicationDate": "27.02.2025",
+    "field": "TKO",
+    "name": "ООО \"Полигон\"",
+    "inn": "3601010182",
+    "kpp": "360101001"
+  },
+  "31750779": {
+    "id": "31750779",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d31750779\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "2 кв. 2025 года",
+    "publicationDate": "15.07.2025",
+    "field": "Холодное водоснабжение",
+    "name": "АМУП \"Райводоканал\"",
+    "inn": "3604084619",
+    "kpp": "360401001"
+  },
+  "27781374": {
+    "id": "27781374",
+    "url": "http://ri.eias.ru/Discl/PublicDisclosureInfoOrg.aspx?reg\u003d2590\u0026form\u003d\u0026razdel\u003d\u0026sphere\u003d\u0026year\u003d\u0026period\u003d\u0026orgreg\u003dfalse\u0026orgId\u003d27781374\u0026mo\u003d\u0026mr\u003d",
+    "reportingPeriod": "1 кв. 2025 года",
+    "publicationDate": "03.04.2025",
+    "field": "Холодное водоснабжение",
+    "name": "ООО \"Острогожскгидроресурс\"",
+    "inn": "3619011469",
+    "kpp": "361901001"
+  }
+}

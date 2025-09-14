@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ИИ Помощник</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light dark:bg-dark text-light-text dark:text-dark-text flex flex-col h-screen">
+  <!-- Header -->
+  <header class="bg-light-header dark:bg-dark-header text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">ИИ Помощник</h1>
+    <div class="flex space-x-4">
+      <button id="toggle-left-sidebar" class="focus:outline-none"><i data-feather="menu" class="w-6 h-6"></i></button>
+      <button id="toggle-right-sidebar" class="focus:outline-none"><i data-feather="sidebar" class="w-6 h-6"></i></button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="flex flex-1 overflow-hidden relative">
+    <!-- Left Sidebar (Chats) -->
+    <aside id="left-sidebar" class="sidebar w-72 bg-light-sidebar dark:bg-dark-sidebar p-4 border-r border-light-border dark:border-dark-border overflow-y-auto">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-lg font-semibold">Чаты</h2>
+        <button id="new-chat" class="bg-light-button dark:bg-dark-button text-white px-3 py-1 rounded hover:bg-light-button-hover dark:hover:bg-dark-button-hover"><i data-feather="plus" class="w-5 h-5"></i></button>
+      </div>
+      <div id="chat-list" class="space-y-2 pr-2 chat-list-container"></div>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="flex-1 p-4 flex flex-col">
+      <div id="message-container" class="message-container flex-1 mb-4"></div>
+      <div class="flex items-center">
+        <textarea id="message-input" class="multiline-input flex-1 p-3 border rounded-lg bg-light-input dark:bg-dark-input border-light-border dark:border-dark-border" placeholder="Введите сообщение..."></textarea>
+        <button id="send-message" class="ml-3 bg-light-button dark:bg-dark-button text-white p-3 rounded-full hover:bg-light-button-hover dark:hover:bg-dark-button-hover"><i data-feather="send" class="w-6 h-6"></i></button>
+      </div>
+    </main>
+
+    <!-- Right Sidebar (Quick Access) -->
+    <aside id="right-sidebar" class="sidebar w-72 bg-light-sidebar dark:bg-dark-sidebar p-4 border-l border-light-border dark:border-dark-border overflow-y-auto">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-lg font-semibold">Быстрый доступ</h2>
+        <button id="new-section" class="bg-light-button dark:bg-dark-button text-white px-3 py-1 rounded hover:bg-light-button-hover dark:hover:bg-dark-button-hover"><i data-feather="folder-plus" class="w-5 h-5"></i></button>
+      </div>
+      <div id="record-list" class="space-y-4 pr-2"></div>
+    </aside>
+
+    <!-- Settings Button -->
+    <button id="settings-btn" class="fixed bottom-4 left-4 bg-light-button dark:bg-dark-button text-white p-3 rounded-full hover:bg-light-button-hover dark:hover:bg-dark-button-hover z-10">
+      <i data-feather="settings" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="bg-light-sidebar dark:bg-dark-sidebar p-6 rounded-lg w-80">
+        <h3 class="text-lg font-semibold mb-4">Настройки</h3>
+        <div class="space-y-4">
+          <div>
+            <button id="toggle-theme" class="bg-light-button dark:bg-dark-button text-white px-4 py-2 rounded hover:bg-light-button-hover dark:hover:bg-dark-button-hover w-full">Переключить на тёмную</button>
+          </div>
+          <div>
+            <label class="flex items-center">
+              <input id="warnings-toggle" type="checkbox" class="mr-2">
+              Включить предупреждения
+            </label>
+          </div>
+          <button id="close-settings" class="bg-light-button dark:bg-dark-button text-white px-4 py-2 rounded hover:bg-light-button-hover dark:hover:bg-dark-button-hover w-full">Закрыть</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Warning Modal -->
+    <div id="warning-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="bg-light-sidebar dark:bg-dark-sidebar p-6 rounded-lg w-80">
+        <p class="mb-4">Пожалуйста, выберите запись из панели быстрого доступа.</p>
+        <button id="close-warning" class="bg-light-button dark:bg-dark-button text-white px-4 py-2 rounded hover:bg-light-button-hover dark:hover:bg-dark-button-hover w-full">ОК</button>
+      </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="delete-confirm-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="bg-light-sidebar dark:bg-dark-sidebar p-6 rounded-lg w-80">
+        <p id="delete-confirm-message" class="mb-4"></p>
+        <div class="flex space-x-2">
+          <button id="confirm-delete" class="bg-red-500 dark:bg-red-700 text-white px-4 py-2 rounded hover:bg-red-600 dark:hover:bg-red-800 flex-1">Удалить</button>
+          <button id="cancel-delete" class="bg-gray-400 dark:bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-500 dark:hover:bg-gray-700 flex-1">Отмена</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Section Modal -->
+    <div id="new-section-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="bg-light-sidebar dark:bg-dark-sidebar p-6 rounded-lg w-80">
+        <h3 class="text-lg font-semibold mb-4">Новый раздел</h3>
+        <input id="section-title-input" class="w-full p-2 border rounded mb-4 bg-light-input dark:bg-dark-input border-light-border dark:border-dark-border" placeholder="Название раздела">
+        <div class="flex space-x-2">
+          <button id="save-section" class="bg-light-button dark:bg-dark-button text-white px-4 py-2 rounded hover:bg-light-button-hover dark:hover:bg-dark-button-hover flex-1">Сохранить</button>
+          <button id="cancel-section" class="bg-gray-400 dark:bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-500 dark:hover:bg-gray-700 flex-1">Отмена</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Record Modal -->
+    <div id="new-record-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="bg-light-sidebar dark:bg-dark-sidebar p-6 rounded-lg w-80">
+        <h3 class="text-lg font-semibold mb-4">Новая запись</h3>
+        <select id="record-section-select" class="w-full p-2 border rounded mb-4 bg-light-input dark:bg-dark-input border-light-border dark:border-dark-border"></select>
+        <input id="record-title-input" class="w-full p-2 border rounded mb-4 bg-light-input dark:bg-dark-input border-light-border dark:border-dark-border" placeholder="Заголовок записи">
+        <textarea id="record-body-input" class="w-full p-2 border rounded mb-4 bg-light-input dark:bg-dark-input border-light-border dark:border-dark-border" placeholder="Тело записи"></textarea>
+        <div class="flex space-x-2">
+          <button id="save-record" class="bg-light-button dark:bg-dark-button text-white px-4 py-2 rounded hover:bg-light-button-hover dark:hover:bg-dark-button-hover flex-1">Сохранить</button>
+          <button id="cancel-record" class="bg-gray-400 dark:bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-500 dark:hover:bg-gray-700 flex-1">Отмена</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rename Chat Modal -->
+    <div id="rename-chat-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="bg-light-sidebar dark:bg-dark-sidebar p-6 rounded-lg w-80">
+        <h3 class="text-lg font-semibold mb-4">Переименовать чат</h3>
+        <input id="chat-title-input" class="w-full p-2 border rounded mb-4 bg-light-input dark:bg-dark-input border-light-border dark:border-dark-border" placeholder="Новое название чата">
+        <div class="flex space-x-2">
+          <button id="save-chat-title" class="bg-light-button dark:bg-dark-button text-white px-4 py-2 rounded hover:bg-light-button-hover dark:hover:bg-dark-button-hover flex-1">Сохранить</button>
+          <button id="cancel-chat-title" class="bg-gray-400 dark:bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-500 dark:hover:bg-gray-700 flex-1">Отмена</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- View/Edit Record Modal -->
+    <div id="view-record-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="bg-light-sidebar dark:bg-dark-sidebar p-6 rounded-lg w-80">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-lg font-semibold">Просмотр записи</h3>
+          <button id="edit-record-btn" class="hover:bg-light-button-hover dark:hover:bg-dark-button-hover"><i data-feather="edit" class="w-5 h-5"></i></button>
+        </div>
+        <div id="view-record-content"></div>
+        <div id="edit-record-form" class="hidden space-y-4">
+          <select id="edit-record-section-select" class="w-full p-2 border rounded bg-light-input dark:bg-dark-input border-light-border dark:border-dark-border"></select>
+          <input id="edit-record-title-input" class="w-full p-2 border rounded bg-light-input dark:bg-dark-input border-light-border dark:border-dark-border" placeholder="Заголовок записи">
+          <textarea id="edit-record-body-input" class="w-full p-2 border rounded bg-light-input dark:bg-dark-input border-light-border dark:border-dark-border" placeholder="Тело записи"></textarea>
+          <div class="flex space-x-2">
+            <button id="save-edit-record" class="bg-light-button dark:bg-dark-button text-white px-4 py-2 rounded hover:bg-light-button-hover dark:hover:bg-dark-button-hover flex-1">Сохранить</button>
+            <button id="cancel-edit-record" class="bg-gray-400 dark:bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-500 dark:hover:bg-gray-700 flex-1">Отмена</button>
+          </div>
+        </div>
+        <button id="close-view-record" class="bg-light-button dark:bg-dark-button text-white px-4 py-2 rounded hover:bg-light-button-hover dark:hover:bg-dark-button-hover w-full mt-4">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* ==== Цветовые переменные ==== */
+:root {
+  --bg: #f9fafb;
+  --text: #1f2937;
+  --header: #3b82f6;
+  --sidebar: #ffffff;
+  --input: #ffffff;
+  --border: #d1d5db;
+  --button: #3b82f6;
+  --button-hover: #2563eb;
+  --item: #f3f4f6;
+  --selected: #dbeafe;
+  --user-msg: #bfdbfe;
+  --ai-msg: #e5e7eb;
+}
+
+html.dark {
+  --bg: #0a0a0a;
+  --text: #e5e7eb;
+  --header: #1e3a8a;
+  --sidebar: #111827;
+  --input: #1f2937;
+  --border: #374151;
+  --button: #1d4ed8;
+  --button-hover: #1e40af;
+  --item: #1f2937;
+  --selected: #1e40af;
+  --user-msg: #1e40af;
+  --ai-msg: #374151;
+}
+
+/* ==== Привязка переменных к вашим классам ==== */
+.bg-light { background-color: var(--bg) !important; }
+.text-light-text { color: var(--text) !important; }
+.bg-light-header { background-color: var(--header) !important; }
+.bg-light-sidebar { background-color: var(--sidebar) !important; }
+.bg-light-input { background-color: var(--input) !important; }
+.border-light-border { border-color: var(--border) !important; }
+.bg-light-button { background-color: var(--button) !important; }
+.bg-light-button-hover:hover { background-color: var(--button-hover) !important; }
+.bg-light-item { background-color: var(--item) !important; }
+.bg-light-selected { background-color: var(--selected) !important; }
+.bg-light-user-message { background-color: var(--user-msg) !important; }
+.bg-light-ai-message { background-color: var(--ai-msg) !important; }
+
+/* ==== Стили для боковых панелей ==== */
+.sidebar {
+  transition: transform 0.3s ease-in-out;
+}
+.sidebar-hidden {
+  transform: translateX(-100%);
+}
+.sidebar-right-hidden {
+  transform: translateX(100%);
+}
+
+/* ==== Стили для анимации набора текста ==== */
+.typing::after {
+  content: '...';
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* ==== Стили для контейнера сообщений ==== */
+.message-container {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+/* ==== Стили для многострочного ввода ==== */
+.multiline-input {
+  resize: none;
+  height: 120px;
+}
+
+/* ==== Отступ для кнопки настроек ==== */
+.chat-list-container {
+  padding-bottom: 80px;
+}
+
+/* ==== Стили для содержимого секций ==== */
+.section-content {
+  display: none;
+}
+.section-content.visible {
+  display: block;
+}
+
+/* ==== Стили для скроллбаров ==== */
+aside::-webkit-scrollbar {
+  width: 6px;
+}
+aside::-webkit-scrollbar-track {
+  background: var(--sidebar);
+  border-radius: 3px;
+}
+aside::-webkit-scrollbar-thumb {
+  background: rgba(107, 114, 128, 0.5);
+  border-radius: 3px;
+}
+aside::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.8);
+}
+
+/* Скрыть скроллбар для контейнера сообщений */
+.message-container::-webkit-scrollbar {
+  width: 0;
+}
+.message-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Стили для кнопки просмотра записи */
+.view-record-btn {
+  color: var(--text);
+}
+.view-record-btn:hover {
+  background-color: var(--button-hover);
+}
+
+/* Добавлено: Поддержка переносов строк в сообщениях */
+.break-words {
+  white-space: pre-line;
+}
